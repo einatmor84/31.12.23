@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers  = {8,6,9};
+        Scanner s = new Scanner(System.in);
+
+      /*  for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }*/
+        ArrayList<String> names = new ArrayList<String>();
+
+        System.out.println("==============");
+
+        for(int x: numbers){
+            System.out.println(x);
+        }
+
+        Example e1 =new Example("e1");
+        Example e2 =new Example("e2");
+        Example e3 =new Example("e3");
+
+        Example[] examples = {e1,e2,e3};
+        for(Example example: examples){
+            System.out.println(example.toString());
+        }
+
+        int password = 1234;
+        int password2 = 5678;
+
+        if (password == 1234){
+
+            if(password2 == 5678){
+                System.out.println("able to log in(:");
+            }
+            else {
+                System.out.println("was able to just log in to first if (: ");
+            }
+       
